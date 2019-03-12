@@ -1,0 +1,10 @@
+/*
+Nursima Donuk
+Hw E6.7
+Write a function void reverse()
+that reverses the sequence of elements in an array.
+*/
+
+void reverse(){
+
+}

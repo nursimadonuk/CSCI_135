@@ -91,6 +91,7 @@ int largestTwinPrime(int a, int b){
   }
   return tp;
 }
+/*
 int main(){
   std::cout<<isDivisibleBy(100, 25)<<std::endl;
   std::cout<<isDivisibleBy(35, 17)<<std::endl;
@@ -111,3 +112,4 @@ int main(){
   std::cout<<largestTwinPrime(14, 16)<<std::endl;
   return 0;
 }
+*/
