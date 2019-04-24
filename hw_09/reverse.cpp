@@ -6,22 +6,24 @@ that reverses the sequence of elements in an array.
 */
 #include <iostream>
 
-void reverse(int list[10]){
-  int newLst[10];
-  int i = 10;
-  int ind = 0;
-  for (int j = 0 ; j < i; i--){
-    newLst[ind] = list[i-1];
-    ind++;
+void reverse(int arr[], int const array_size){
+  int start = 0;
+  int end =  array_size - 1;
+  while(start < end){
+    int temp = arr[start];
+    arr[start] = arr[end];
+    arr[end] = temp;
+    start++;
+    end--;
   }
-
 }
-
 int main(){
-  int lst[10];
-  for (int i = 0; i < 10; i++){
-    lst[i]=i;
+  int example[] = {
+    1, 2, 3, 4
+  };
+  reverse(example, 4);
+  for(int = 0; i<4; i++){
+    std::cout<<example[i]<<std::endl;
   }
-  reverse(lst);
   return 0;
 }
